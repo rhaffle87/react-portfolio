@@ -3,11 +3,10 @@ import StaggeredMenu from './components/StaggeredMenu'
 import { listTools, listProyek } from './data'
 import { menuItems, socialItems } from './data'
 
-
 function App() {
   return (
       <> 
-      <div className="fixed top-50 right-0 z-50">
+      <div className="fixed top-50 right-0 z-40 overflow-hidden">
         <StaggeredMenu
           position="right"
           items={menuItems}
@@ -17,16 +16,16 @@ function App() {
           menuButtonColor="#fff"
           openMenuButtonColor="#000000"
           changeMenuColorOnOpen={true}
-          colors={['#B19EEF', '#5227FF']}
+          colors={['#EDC06E' , '#E09B1B' , '#68480D']}
           logoUrl="public/vite.svg"
-          accentColor="#ff6b6b"
+          accentColor="#EDC06E"
           onMenuOpen={() => console.log('Menu opened')}
           onMenuClose={() => console.log('Menu closed')}
         />
       </div>
 
       {/* Hero Section */}
-      <div className="hero grid md:grid-cols-2 pt-20 items-center xl:gap-0 gap-6 grid-cols-1" id='home'>
+      <div className="hero grid md:grid-cols-2 pt-25 items-center xl:gap-0 gap-6 grid-cols-1" id='home'>
         <div className='animate__animated animate__fadeInUp animate__delay-3s'>
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src={DataImage.HeroImage} alt="Hero Image" className='w-10 rounded-md' loading='lazy'/>
@@ -39,14 +38,14 @@ function App() {
             <a href="#projects" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>Lihat Proyek<i class="ri-arrow-down-line ri-lg"></i></a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s" loading='lazy'/>
+        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto md:items-center sm: animate__animated animate__fadeInUp animate__delay-4s" loading='lazy'/>
       </div>
 
-
+      {/* About Section */}
       <div className='About mt-32 py-10' id='about'>
         <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000">
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md mb-10 sm:hidden' loading='lazy'/>
-          <p className='text-base/loose mb-10 text-justify'>
+          <p className='text-base/loose mb-10 text-center sm:text-center md:text-center'>As a Telecommunications Engineering student at ITS,
             I served as Head of the Web Development Subdivision for EVOLUTION ITS 2025, leading team recruitment and coordination for a large student event. I also contributed to ILITS X FORDA ITS 2024 in logistics, resolving technical and vendor issues efficiently. Beyond campus, I built a digital art commission business on social media, gaining skills in creativity, client management, and entrepreneurship.
           </p>
           <div className='flex items-center justify-between'>
@@ -63,7 +62,6 @@ function App() {
             </div>
           </div>
         </div>
-
 
         <div className='tools mt-32' id='tools'>
           <h1 className='text-4xl/snug font-bold mb-4' data-aos="fade-up" data-aos-duration="1000">Tools Used</h1>

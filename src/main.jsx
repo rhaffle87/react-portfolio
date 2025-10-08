@@ -2,8 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Navbar from './components/navbar.jsx'
-import Footer from './components/Footer.jsx'
+// import Navbar from './components/navbar.jsx'
+// import Footer from './components/Footer.jsx'
 import Preloader from './components/Preloader.jsx'
 
 import 'animate.css';
@@ -17,7 +17,7 @@ AOS.init();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Preloader />
-    <div className='container mx-auto overflow-x-hidden px-4'>
+    <div className='container mx-auto px-4'>
       <StaggeredMenu />
       <App />
     </div>

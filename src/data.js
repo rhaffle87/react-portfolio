@@ -152,7 +152,7 @@ export const menuItems = [
 ]
 
 export const socialItems = [
-  { label: 'Twitter', link: 'https://twitter.com' },
-  { label: 'GitHub', link: 'https://github.com' },
-  { label: 'LinkedIn', link: 'https://linkedin.com' }
+  { label: 'Instagram', link: 'https://www.instagram.com/rhaffle87/' },
+  { label: 'GitHub', link: 'https://github.com/rhaffle87' },
+  { label: 'LinkedIn', link: 'https://www.linkedin.com/in/rafli-alif-ihza-hartono-084460288/' }
 ]

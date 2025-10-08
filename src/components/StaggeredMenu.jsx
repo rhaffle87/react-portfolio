@@ -11,7 +11,7 @@ export const StaggeredMenu = ({
   className,
   logoUrl = 'public/vite.svg',
   menuButtonColor = '#fff',
-  openMenuButtonColor = '#fff',
+  openMenuButtonColor = '#000000',
   changeMenuColorOnOpen = true,
   isFixed = true,
   accentColor = '#5227FF',
