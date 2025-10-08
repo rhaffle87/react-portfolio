@@ -9,17 +9,17 @@ import Preloader from './components/Preloader.jsx'
 import 'animate.css';
 import 'remixicon/fonts/remixicon.css'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+import StaggeredMenu from './components/StaggeredMenu.jsx'
 // ..
 AOS.init();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Preloader />
-    <div className='container mx-auto px-4'>
-      <Navbar />
+    <div className='container mx-auto overflow-x-hidden px-4'>
+      <StaggeredMenu />
       <App />
-      <Footer />
     </div>
   </StrictMode>,
 )

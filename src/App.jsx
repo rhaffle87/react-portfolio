@@ -1,10 +1,32 @@
 import DataImage from './data'
+import StaggeredMenu from './components/StaggeredMenu'
 import { listTools, listProyek } from './data'
+import { menuItems, socialItems } from './data'
+
 
 function App() {
   return (
-    <>
-      <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1" id='home'>
+      <> 
+      <div className="fixed top-50 right-0 z-50">
+        <StaggeredMenu
+          position="right"
+          items={menuItems}
+          socialItems={socialItems}
+          displaySocials={true}
+          displayItemNumbering={true}
+          menuButtonColor="#fff"
+          openMenuButtonColor="#000000"
+          changeMenuColorOnOpen={true}
+          colors={['#B19EEF', '#5227FF']}
+          logoUrl="public/vite.svg"
+          accentColor="#ff6b6b"
+          onMenuOpen={() => console.log('Menu opened')}
+          onMenuClose={() => console.log('Menu closed')}
+        />
+      </div>
+
+      {/* Hero Section */}
+      <div className="hero grid md:grid-cols-2 pt-20 items-center xl:gap-0 gap-6 grid-cols-1" id='home'>
         <div className='animate__animated animate__fadeInUp animate__delay-3s'>
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src={DataImage.HeroImage} alt="Hero Image" className='w-10 rounded-md' loading='lazy'/>
@@ -19,6 +41,7 @@ function App() {
         </div>
         <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s" loading='lazy'/>
       </div>
+
 
       <div className='About mt-32 py-10' id='about'>
         <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000">
@@ -41,6 +64,7 @@ function App() {
           </div>
         </div>
 
+
         <div className='tools mt-32' id='tools'>
           <h1 className='text-4xl/snug font-bold mb-4' data-aos="fade-up" data-aos-duration="1000">Tools Used</h1>
           <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Here are the tools I used for designing and developing the website.</p>
@@ -57,6 +81,7 @@ function App() {
           </div>
         </div>
       </div>
+
 
       <div className="projects mt-32 py-10" id='projects'>
         <h1 className='text-center text-4xl font-bold mb-2' data-aos="fade-up" data-aos-duration="1000">Projects</h1>
@@ -84,6 +109,7 @@ function App() {
           ))}
         </div>
       </div>
+      
       <div className="Contact p-10 mt-32" id='contact'>
         <h1 className='text-4xl mb-2 font-bold text-center' data-aos="fade-up" data-aos-duration="1000">Contact</h1>
         <p className='text-base/loose text-center opacity-50 mb-10' data-aos="fade-up" data-aos-duration="1000" >Let's get connected with me!</p>
