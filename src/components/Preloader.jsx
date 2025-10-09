@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 const Preloader = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        setTimeout(() => {setLoading(false)},2000)
+        setTimeout(() => {setLoading(false)},1000)
     }, []);
     
     return (

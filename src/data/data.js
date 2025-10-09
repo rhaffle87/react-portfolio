@@ -145,10 +145,11 @@ export const listProyek = [
 ];
 
 export const menuItems = [
-  { label: 'Home', ariaLabel: 'Go to home page', link: '#home' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '#about' },
-  { label: 'Projects', ariaLabel: 'View my projects', link: '#projects' },
-  { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' }
+  { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'Tools', ariaLabel: 'View tools used', link: '/tools' },
+  { label: 'Projects', ariaLabel: 'View my projects', link: '/projects' },
+  { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
 ]
 
 export const socialItems = [
