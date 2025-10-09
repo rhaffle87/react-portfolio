@@ -9,7 +9,7 @@ export const StaggeredMenu = ({
   displaySocials = true,
   displayItemNumbering = true,
   className,
-  logoUrl = 'public/vite.svg',
+  logoUrl = '/vite.svg',
   menuButtonColor = '#fff',
   openMenuButtonColor = '#000000',
   changeMenuColorOnOpen = true,
@@ -312,8 +312,11 @@ export const StaggeredMenu = ({
 
   return (
     <div
-      className={`sm-scope z-40 ${isFixed ? 'fixed top-0 left-0 w-screen h-screen overflow-hidden' : 'w-full h-full'}`}
-    >
+        className={`sm-scope z-40 ${isFixed ? 'fixed top-0 left-0 w-screen h-screen' : 'w-full h-full'}`}
+        style={{
+          pointerEvents: open ? 'auto' : 'none', // ✅ Only catch events when open
+        }}
+      >
       <div
         className={(className ? className + ' ' : '') + 'staggered-menu-wrapper relative w-full h-full'}
         style={accentColor ? { ['--sm-accent']: accentColor } : undefined}
@@ -344,6 +347,7 @@ export const StaggeredMenu = ({
 
         <header
           className="staggered-menu-header absolute top-0 left-0 w-full flex items-center justify-between p-[2em] bg-transparent pointer-events-none z-20"
+          style={{ pointerEvents: 'auto' }} // ✅ Keeps toggle clickable
           aria-label="Main navigation header"
         >
           <div className="sm-logo flex items-center select-none pointer-events-auto" aria-label="Logo">

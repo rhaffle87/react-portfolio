@@ -1,13 +1,97 @@
-import DataImage from './data'
+import DataImage from './data/data'
 import StaggeredMenu from './components/StaggeredMenu'
-import { listTools, listProyek } from './data'
-import { menuItems, socialItems } from './data'
+import LogoLoop from './components/LogoLoop'
+import { listTools, listProyek } from './data/data'
+import { menuItems, socialItems } from './data/data'
+import {
+  SiReact,
+  SiTailwindcss,
+  SiJavascript,
+  SiNodedotjs,
+  SiGithub,
+  SiCanva,
+  SiFigma,
+  SiCoreldraw,
+  SiPhp,
+  SiMysql,
+  SiWordpress,
+} from "react-icons/si";
+
+const techLogos = [
+  {
+    node: <SiReact />,
+    title: "React JS",
+    subtitle: "Framework",
+    href: "https://react.dev/",
+  },
+  {
+    node: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    subtitle: "Framework",
+    href: "https://tailwindcss.com/",
+  },
+  {
+    node: <SiJavascript />,
+    title: "Javascript",
+    subtitle: "Language",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    node: <SiNodedotjs />,
+    title: "Node JS",
+    subtitle: "Javascript Runtime",
+    href: "https://nodejs.org/",
+  },
+  {
+    node: <SiGithub />,
+    title: "Github",
+    subtitle: "Repository",
+    href: "https://github.com/",
+  },
+  {
+    node: <SiCanva />,
+    title: "Canva",
+    subtitle: "Design App",
+    href: "https://www.canva.com/",
+  },
+  {
+    node: <SiFigma />,
+    title: "Figma",
+    subtitle: "Design App",
+    href: "https://www.figma.com/",
+  },
+  {
+    node: <SiCoreldraw />,
+    title: "CorelDraw",
+    subtitle: "Design App",
+    href: "https://www.coreldraw.com/",
+  },
+  {
+    node: <SiPhp />,
+    title: "PHP",
+    subtitle: "Language",
+    href: "https://www.php.net/",
+  },
+  {
+    node: <SiMysql />,
+    title: "MySQL",
+    subtitle: "Database",
+    href: "https://www.mysql.com/",
+  },
+  {
+    node: <SiWordpress />,
+    title: "Wordpress",
+    subtitle: "CMS",
+    href: "https://wordpress.org/",
+  },
+];
 
 function App() {
   return (
       <> 
-      <div className="fixed top-50 right-0 z-40 overflow-hidden">
-        <StaggeredMenu
+      {/* Staggered Menu */}
+      <div>
+        <StaggeredMenu className='animate__animated animate__fadeInUp animate__delay-3s'
           position="right"
           items={menuItems}
           socialItems={socialItems}
@@ -17,7 +101,7 @@ function App() {
           openMenuButtonColor="#000000"
           changeMenuColorOnOpen={true}
           colors={['#EDC06E' , '#E09B1B' , '#68480D']}
-          logoUrl="public/vite.svg"
+          logoUrl="/vite.svg"
           accentColor="#EDC06E"
           onMenuOpen={() => console.log('Menu opened')}
           onMenuClose={() => console.log('Menu closed')}
@@ -35,7 +119,7 @@ function App() {
           <p className="text-base/loose mb-6 opacity-50">Hi! I’m Rafli Alif Ihza Hartono, a Telecommunications Engineering student at ITS who is passionate about technology, especially web development and electronics. With experiences in organizations and event committees, I’m used to working in teams, tackling challenges with practical solutions, and continuously learning to create impactful projects.</p>
           <div className="flex sm:gap-4 item-center gap-2">
             <a href="#" className='bg-yellow-700 p-4 rounded-2xl hover:bg-yellow-600'>Download CV <i className="ri-download-line ri-lg"></i></a>
-            <a href="#projects" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>Lihat Proyek<i class="ri-arrow-down-line ri-lg"></i></a>
+            <a href="#projects" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>Lihat Proyek<i className="ri-arrow-down-line ri-lg"></i></a>
           </div>
         </div>
         <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto md:items-center sm: animate__animated animate__fadeInUp animate__delay-4s" loading='lazy'/>
@@ -62,7 +146,10 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
 
+      <div className='container mx-auto px-4'>
+        {/* Tools Section */}
         <div className='tools mt-32' id='tools'>
           <h1 className='text-4xl/snug font-bold mb-4' data-aos="fade-up" data-aos-duration="1000">Tools Used</h1>
           <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Here are the tools I used for designing and developing the website.</p>
@@ -77,10 +164,27 @@ function App() {
              </div>
             ))}
           </div>
+
+          {/* Logo Loop Section */}
+          <div className="w-full max-w-[100vw] overflow-x-hidden flex justify-center mt-10">
+            <LogoLoop
+              logos={techLogos}
+              logoHeight={80}        
+              gap={32}               
+              direction="right"      
+              speed={60}
+              pauseOnHover={true}
+              fadeOut={true}
+              fadeOutColor="#18181b" 
+              scaleOnHover={true}
+              ariaLabel="Tech logos"
+              width="100%"          
+            />
+          </div>
         </div>
       </div>
 
-
+      {/* Projects */}
       <div className="projects mt-32 py-10" id='projects'>
         <h1 className='text-center text-4xl font-bold mb-2' data-aos="fade-up" data-aos-duration="1000">Projects</h1>
         <p className='text-base/loose text-center opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"> Here are some of the projects I have worked on.</p>
