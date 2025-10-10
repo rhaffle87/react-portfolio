@@ -11,7 +11,7 @@ function Projects() {
             <img src={proyek.gambar} alt="Proyek Image" loading='lazy' />
             <div>
               <h1 className='text-2xl font-bold my-4'>{proyek.nama}</h1>
-              <p className='text-sm text-yellow-400 font-semibold'>
+              <p className='text-sm text-[#EDC06E] font-semibold'>
                 {proyek.role} <span className='opacity-60'>· {proyek.year}</span>
               </p>
               <p className='text-base/loose my-4'>{proyek.desk}</p>
@@ -21,7 +21,7 @@ function Projects() {
                 ))}
               </div>
               <div className='mt-8 text-center'>
-                <a href="#" className='bg-yellow-700 p-3 rounded-lg cursor-pointer block border border-zinc-600 hover:bg-yellow-600 transition-colors'>Lihat Website</a>
+                <a href="#" className='bg-[#68480D] p-3 rounded-lg cursor-pointer block border border-zinc-600 hover:bg-[#E09B1B] transition-colors'>Lihat Website</a>
               </div>
             </div>
           </div>
