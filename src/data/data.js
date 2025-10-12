@@ -107,9 +107,10 @@ export const listTools = [
 ];
 
 import Proyek1 from "/assets/proyek/evol.png";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
+import Proyek2 from "/assets/proyek/proyek1.webp";
+import Proyek3 from "/assets/proyek/proyek2.webp";
+import Proyek4 from "/assets/proyek/proyek3.webp";
+import Proyek5 from "/assets/proyek/proyek4.webp";
 
 export const listProyek = [
   {
@@ -117,32 +118,58 @@ export const listProyek = [
     gambar: Proyek1,
     nama: "EVOLUTION ITS 2025 Website",
     desk: "Led the web development subdivision to build and deploy the official event website.",
-    tools: ["Wordpress", "PHP", "Javascript", "CSS", "HTML"],
+    tools: ["WordPress", "PHP", "JavaScript", "CSS", "HTML"],
     role: "Head of Web Development Subdivision",
     year: "2025",
     dad: "100",
+    link: "https://ee.evolution-its.my.id/",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Digital Art Commission Business",
-    desk: "Make a personal digital art commission via social media platforms.",
-    tools: ["Digital Art", "Entrepreneurship"],
-    role: "Founder",
-    year: "2021 – Present",
-    dad: "300",
+    nama: "AI Garbage Classifier",
+    desk: "A machine learning–based web app that classifies garbage types using AI models to support sustainability and waste sorting automation.",
+    tools: ["Python", "TensorFlow", "Flask", "React", "TailwindCSS"],
+    role: "Full-stack Developer (On-going)",
+    year: "2025",
+    dad: "200",
+    link: "https://github.com/rhaffle87/ai-garbage-classifier",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Academic Projects",
-    desk: "Applied knowledge in electronics and telecommunications through lab works and research.",
-    tools: ["Electronics", "Telcom", "Research"],
-    role: "Student / Project Contributor",
-    year: "2023 – Present",
+    nama: "Arcade Google Cloud Calculator Points",
+    desk: "An on-going gamified point tracker for Google Cloud skill development using interactive leaderboards and data visualization.",
+    tools: ["React", "Firebase", "Node.js", "TailwindCSS"],
+    role: "Frontend Developer (On-going)",
+    year: "2025",
+    dad: "300",
+    link: "https://github.com/rhaffle87/arcade-google-cloud-calculator-points",
+  },
+  {
+    id: 4,
+    gambar: Proyek4,
+    nama: "ITS NIGHT Website",
+    desk: "Built and deployed an official event website showcasing performances, guests, and event details for ITS NIGHT.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Frontend Developer",
+    year: "2024",
     dad: "400",
+    link: "https://rhaffle87.github.io/ITS-NIGHT/",
+  },
+  {
+    id: 5,
+    gambar: Proyek5,
+    nama: "RevoU Fundamental Course Project",
+    desk: "Completed a website project as part of RevoU’s Fundamental Course, focusing on front-end web development principles.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Web Developer",
+    year: "2024",
+    dad: "500",
+    link: "https://revou-fundamental-course.github.io/22-jul-24-rhaffle87/",
   },
 ];
+
 
 export const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },

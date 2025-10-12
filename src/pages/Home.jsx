@@ -1,4 +1,5 @@
 import DataImage from '../data/data'
+import Counter from '../components/Counter';
 
 function Home() {
   return (
@@ -16,6 +17,12 @@ function Home() {
         </div>
       </div>
       <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto md:items-center sm: animate__animated animate__fadeInUp animate__delay-2s" loading='lazy'/>
+
+      <Counter
+        fontSize={18}
+        textColor="white"
+        fontWeight="bold"
+      />
     </div>
   )
 }
