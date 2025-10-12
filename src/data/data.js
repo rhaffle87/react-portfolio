@@ -170,6 +170,7 @@ export const listProyek = [
   },
 ];
 
+import { SiInstagram, SiGithub, SiLinkedin, SiWhatsapp, SiGmail } from 'react-icons/si';
 
 export const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
@@ -180,7 +181,9 @@ export const menuItems = [
 ]
 
 export const socialItems = [
-  { label: 'Instagram', link: 'https://www.instagram.com/rhaffle87/' },
-  { label: 'GitHub', link: 'https://github.com/rhaffle87' },
-  { label: 'LinkedIn', link: 'https://www.linkedin.com/in/rafli-alif-ihza-hartono-084460288/' }
+  { icon: SiInstagram, link: 'https://www.instagram.com/rhaffle87/' },
+  { icon: SiGithub, link: 'https://github.com/rhaffle87' },
+  { icon: SiLinkedin, link: 'https://www.linkedin.com/in/rafli-alif-ihza-hartono-084460288/' },
+  { icon: SiWhatsapp, link: 'https://wa.me/6283846121134' },
+  { icon: SiGmail, link: 'mailto:rhaffle87@gmail.com' }
 ]

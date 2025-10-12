@@ -456,14 +456,14 @@ export const StaggeredMenu = ({
                   role="list"
                 >
                   {socialItems.map((s, i) => (
-                    <li key={s.label + i} className="sm-socials-item">
+                    <li key={s.link + i} className="sm-socials-item">
                       <a
                         href={s.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sm-socials-link text-[1.2rem] font-medium text-[#111] no-underline relative inline-block py-[2px] transition-[color,opacity] duration-300 ease-linear"
                       >
-                        {s.label}
+                        <s.icon size={25} className="transition-transform hover:scale-110 duration-300" />
                       </a>
                     </li>
                   ))}
