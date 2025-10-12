@@ -57,7 +57,7 @@ export default function Counter({
     if (liked) return;
 
     try {
-      const res = await fetch('/api/like', { method: 'POST' });
+      const res = await fetch('/api/Likes', { method: 'POST' });
       const data = await res.json();
 
       if (data.success) {
@@ -103,7 +103,7 @@ export default function Counter({
       >
         {loading || error ? buttonText : (
           <>
-            {likes} <AiOutlineHeart /> {liked ? 'Liked!' : 'Like Portfolio'}
+            {likes} <AiOutlineHeart /> {liked ? 'Liked!' : 'Like My Portfolio'}
           </>
         )}
       </button>
