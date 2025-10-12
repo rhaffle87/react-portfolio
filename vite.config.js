@@ -8,4 +8,18 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-icons': ['react-icons'],
+          'vendor-motion': ['framer-motion'],
+          'vendor-gsap': ['gsap'],
+          'vendor-three': ['three'],
+          'vendor-others': ['aos', 'ogl', 'lucide-react']
+        }
+      }
+    }
+  }
 })
