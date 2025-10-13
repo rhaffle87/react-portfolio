@@ -106,11 +106,11 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/evol.png";
-import Proyek2 from "/assets/proyek/proyek1.webp";
-import Proyek3 from "/assets/proyek/proyek2.webp";
-import Proyek4 from "/assets/proyek/proyek3.webp";
-import Proyek5 from "/assets/proyek/proyek4.webp";
+import Proyek1 from "/assets/proyek/evolutionits.webp";
+import Proyek2 from "/assets/proyek/aigarbage.webp";
+import Proyek3 from "/assets/proyek/gcloud.webp";
+import Proyek4 from "/assets/proyek/itsnight.webp";
+import Proyek5 from "/assets/proyek/revou.webp";
 
 export const listProyek = [
   {
@@ -138,7 +138,7 @@ export const listProyek = [
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Arcade Google Cloud Calculator Points",
+    nama: "Google Cloud Arcade Calculator Points",
     desk: "An on-going gamified point tracker for Google Cloud skill development using interactive leaderboards and data visualization.",
     tools: ["React", "Firebase", "Node.js", "TailwindCSS"],
     role: "Frontend Developer (On-going)",
@@ -150,7 +150,7 @@ export const listProyek = [
     id: 4,
     gambar: Proyek4,
     nama: "ITS NIGHT Website",
-    desk: "Built and deployed an official event website showcasing performances, guests, and event details for ITS NIGHT.",
+    desk: "Built and deployed a dummy official event website showcasing performances, guests, and event details for ITS NIGHT.",
     tools: ["HTML", "CSS", "JavaScript"],
     role: "Frontend Developer",
     year: "2024",
@@ -174,7 +174,7 @@ import { SiInstagram, SiGithub, SiLinkedin, SiWhatsapp, SiGmail } from 'react-ic
 
 export const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'About', ariaLabel: 'Learn about me', link: '/about' },
   { label: 'Tools', ariaLabel: 'View tools used', link: '/tools' },
   { label: 'Projects', ariaLabel: 'View my projects', link: '/projects' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }

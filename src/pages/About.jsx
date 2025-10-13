@@ -13,8 +13,8 @@ function About() {
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' loading='lazy'/>
           <div className='flex items-center gap-6'>
             <div>
-              <h1 className='text-4xl mb-1'>2<span className='text-yellow-500'>+</span></h1>
-            <p>Project Done</p>
+              <h1 className='text-4xl mb-1'>3<span className='text-yellow-500'>+</span></h1>
+            <p>Projects Done</p>
             </div>
             <div>
               <h1 className='text-4xl mb-1'>1<span className='text-yellow-500'>+</span></h1>
