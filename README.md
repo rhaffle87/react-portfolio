@@ -4,7 +4,7 @@ A modern, interactive personal portfolio website built with React, showcasing pr
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://raflialif.vercel.app/) *(Replace with actual deployment URL)*
+[View Live Portfolio](https://raflialif.vercel.app/)
 
 ## 📋 Overview
 
