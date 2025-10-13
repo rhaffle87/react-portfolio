@@ -7,7 +7,7 @@ function About() {
         <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md mb-10 sm:hidden' loading='lazy'/>
         <p className='text-base/loose mb-10 text-center sm:text-center md:text-center'>
           As a Telecommunications Engineering student at Sepuluh Nopember Institute of Technology (ITS), Indonesia, I have a strong passion for web development and electronics. Throughout my academic journey,
-          I served as Head of the Web Development Subdivision for EVOLUTION ITS 2025, leading team recruitment and coordination for a large student event. I also contributed to ILITS X FORDA ITS 2024 in logistics, resolving technical and vendor issues efficiently. Beyond campus, I built a digital art commission business on social media, gaining skills in creativity and entrepreneurship.
+          I served as Head of the Web Development Subdivision for EVOLUTION ITS 2025, leading team recruitment and coordination for a large student event. Beyond campus, I built a digital art commission business on social media, gaining skills in creativity and entrepreneurship.
         </p>
         <div className='flex items-center justify-between'>
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' loading='lazy'/>
