@@ -175,7 +175,7 @@ export const listProyek = [
     nama: "ACTIFE AI/ML Interactive Toolkit Website",
     desk: "Aid in developing and deploying the ACTIFE website, an AI/ML interactive toolkit for educational purposes.",
     tools: ["Vite", "TailwindCSS", "JavaScript", "React"],
-    role: "Head of Web Development Subdivision",
+    role: "Fullstack Developer",
     year: "2025",
     dad: "600",
     link: "https://actife.vercel.app/",
