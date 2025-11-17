@@ -111,6 +111,7 @@ import Proyek2 from "/assets/proyek/aigarbage.webp";
 import Proyek3 from "/assets/proyek/gcloud.webp";
 import Proyek4 from "/assets/proyek/itsnight.webp";
 import Proyek5 from "/assets/proyek/revou.webp";
+import Proyek6 from "/assets/proyek/actife.webp";
 
 export const listProyek = [
   {
@@ -167,6 +168,17 @@ export const listProyek = [
     year: "2024",
     dad: "500",
     link: "https://revou-fundamental-course.github.io/22-jul-24-rhaffle87/",
+  },
+  {
+    id: 6,
+    gambar: Proyek6,
+    nama: "ACTIFE AI/ML Interactive Toolkit Website",
+    desk: "Aid in developing and deploying the ACTIFE website, an AI/ML interactive toolkit for educational purposes.",
+    tools: ["Vite", "TailwindCSS", "JavaScript", "React"],
+    role: "Head of Web Development Subdivision",
+    year: "2025",
+    dad: "600",
+    link: "https://actife.vercel.app/",
   },
 ];
 

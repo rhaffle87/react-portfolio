@@ -12,7 +12,7 @@ function Home() {
         <h1 className="text-5xl/tight font-bold mb-6">Hello, I'm Rafli Alif</h1>
         <p className="text-base/loose mb-6 opacity-50">Hi! <b>I’m Rafli Alif Ihza Hartono</b>, a Telecommunications Engineering student at ITS who is passionate about technology, especially web development and electronics. With experiences in organizations and event committees, I’m used to working in teams, tackling challenges with practical solutions, and continuously learning to create impactful projects.</p>
         <div className="flex sm:gap-4 item-center gap-2">
-          <a href="#" className='bg-yellow-700 p-4 rounded-2xl hover:bg-yellow-600'>Download CV <i className="ri-download-line ri-lg"></i></a>
+          <a href="https://cv-rafli-alif-docx.tiiny.site" target='_blank' className='bg-yellow-700 p-4 rounded-2xl hover:bg-yellow-600'>Download CV <i className="ri-download-line ri-lg"></i></a>
           <a href="/projects" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>Lihat Proyek<i className="ri-arrow-down-line ri-lg"></i></a>
         </div>
       </div>
